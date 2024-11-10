@@ -1,3 +1,5 @@
+import { IRawTheme } from "vscode-textmate"
+
 /**
  * Get a URL to the oniguruma WASM.
  *
@@ -80,6 +82,8 @@ export interface Options {
    * Get a URL to the oniguruma WASM, typically used in Node.js (optional).
    */
   getOnigurumaUrlFs?: GetOnigurumaUrl | null | undefined
+
+  customTheme?: IRawTheme
 }
 
 /**
