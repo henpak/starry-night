@@ -1,5 +1,3 @@
-import { IRawTheme } from "vscode-textmate"
-
 /**
  * Get a URL to the oniguruma WASM.
  *
@@ -83,7 +81,8 @@ export interface Options {
    */
   getOnigurumaUrlFs?: GetOnigurumaUrl | null | undefined
 
-  customTheme?: IRawTheme
+  scopeToClassExtension?: Record<string, string> | null | undefined
+
 }
 
 /**
